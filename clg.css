@@ -1,0 +1,314 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+body{
+
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    
+    flex-direction: column;
+    
+
+}
+.navbar{
+    display: flex;
+position: sticky;
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    top: 0rem;
+
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    
+    top:0px;
+    left:0px;
+    height: 15vh;
+    width:100vw;
+    z-index:-1;
+    opacity:0.89;
+}
+
+.navbar img{
+    height:9vh ;
+    margin-left: 2rem;
+    border-radius: 10rem;
+}
+
+.navbar ul{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    padding: 0.3rem 10rem;
+    list-style: none;
+    
+
+}
+.navbar ul li{ 
+    list-style: none;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+  }
+  .navbar ul li :hover{
+    color: black;
+    background-color: red;
+    border-radius: 0.7rem;
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1.6rem;
+    color:rgb(65, 9, 20);
+    background-color: lightblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn :hover{
+    color: black;
+    font-size: 1rem;
+}
+.navbar p{
+    font-size: 3rem;
+    padding: 0.4rem 3rem;
+    border-radius: 1rem;
+    color: rgb(65, 9, 20);
+    background-color: lightblue;
+    font-weight: bold;
+    margin-left: 7.5rem;
+    cursor: pointer
+    
+}
+.navbar p:hover{
+    color: black;
+    background-color: rgb(6, 243, 6);
+
+}
+.welcome {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height:60vh ;
+
+}
+.welcome:before{
+     
+        content: "";
+        position: absolute;
+        
+        background: url('../tt.jpg') no-repeat center center/cover;
+        height: 75vh;
+        top:0px;
+        left:0px;
+        width: 100vw;
+        z-index: -2;
+        opacity:0.7;
+    }
+    
+
+.hp{
+    margin: 0.5rem;
+    font-weight: bolder;
+    color: rgb(65, 9, 20);
+}
+.btns{
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    color: rgb(65, 9, 20);
+    background-color: lightblue;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem;
+    
+}
+.category{
+    display: flex;
+
+    height:30vh;
+}
+.coding{
+    width: 25vw;
+height: 20vh;
+    border: 0.2rem solid green;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: pink;
+    text-align: justify;  
+    box-shadow: 0.2rem 0.2rem 0.5rem 0px red;
+}
+.coding a{
+    list-style: none;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+.coding p{
+    
+    font-weight: bold;
+    color: rgb(65, 9, 20);
+    font-size: 1.7rem;
+
+}
+.coding:hover{
+    color: black;
+    background-color: rgb(230, 23, 23);
+    border-radius: 0.7rem;
+}
+.cultural {
+    width: 25vw;
+    height: 20vh;
+    border: 0.2rem solid green ;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: pink;
+    text-align: justify;  
+    box-shadow:  0.2rem 0.2rem 0.5rem 0px red;
+}
+.cultural a{
+    list-style: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+.cultural p{
+    
+    font-weight: bold;
+    color: rgb(65, 9, 20);
+    font-size: 1.7rem;
+
+}
+.cultural:hover{
+    color: black;
+    background-color: rgb(230, 23, 23);
+    border-radius: 0.7rem;
+}
+.quiz{
+    width: 25vw;
+    height: 20vh;
+    border: 0.2rem solid green ;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: pink;
+    text-align: justify; 
+    box-shadow: 0.2rem 0.2rem 0.5rem 0px red;
+
+    
+
+}
+.quiz a{
+    list-style: none;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+.quiz p{
+    
+    font-weight: bold;
+    color: rgb(65, 9, 20);
+    font-size: 1.7rem;
+
+}
+.quiz:hover{
+    color: black;
+    background-color: rgb(230, 23, 23);
+    border-radius: 7px;
+}
+.sport{
+    
+    width: 25vw;
+    height: 20vh;
+    border: 0.2rem solid green ;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: pink;
+    text-align: justify;    
+    box-shadow: 0.2rem 0.2rem 0.5rem 0px red;
+    
+}
+
+.sport a{
+    list-style: none;
+    font-size: 2rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+.sport p{
+    
+    font-weight: bold;
+    color: rgb(65, 9, 20);
+    font-size: 1.7rem;
+
+}
+.sport:hover{
+    color: black;
+    background-color: rgb(230, 23, 23);
+    border-radius: 0.7rem;
+}
+.down{
+    display: flex;
+    
+}
+.down img{
+    
+    border-radius: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0px red;
+}
+.form form{
+    display: flex;
+flex-direction: column;
+background-color: aquamarine;
+}
+.form form input{
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+}
+.form form label{
+    margin: auto;
+    font-size: 2rem;
+}
+.btnse{
+    color: red;
+    margin: auto;
+    width:7vw
+}
+
+@media () {
+    
+}
